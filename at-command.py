@@ -20,7 +20,7 @@ def send_at_cmd(ser):
 
     for command in [
         # For example: Reboot to Download Mode
-        "AT+SUDDLMOD=0,0",
+        "AT+SUDDLMOD=0,0\r\n",
     ]:
         write_and_read(ser, command)
 
